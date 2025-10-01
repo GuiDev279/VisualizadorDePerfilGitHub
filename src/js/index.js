@@ -25,6 +25,17 @@ const baseUrl = 'https://api.github.com';
                         <p>${user.bio || 'Não possui bio cadastrada 😢 '}</p>
                     </div>
                 </div>
+                <hr>
+                <div class="profile-counters">
+                    <div class="followers">
+                        <h3>👥 Seguidores</h3>
+                        <span>${user.followers}</span>
+                    </div>
+                    <div class="following">
+                        <h3>👥 Seguindo</h3>
+                        <span>${user.following}</span>
+                    </div>
+                </div>
             `
 
     }catch (error){
