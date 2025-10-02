@@ -26,7 +26,7 @@ btnSearch.addEventListener('click', async () => {
                     <img src="${user.avatar_url}" alt="Avatar de ${user.name}" class="profile-avatar">
                     <div class="profile-info">
                         <h2>${user.name}</h2>
-                        <p>${user.bio || 'Não possui bio cadastrada 😢 '}</p>
+                        <p>${user.bio || 'Não possui bio cadastrada 😢'}</p>
                     </div>
                 </div>
                 <hr>
@@ -55,7 +55,6 @@ btnSearch.addEventListener('click', async () => {
 
             // Renderizar lista de repositórios
             const reposHtml = repos.length > 0 ? repos.map(repo => `
-
                 <a href="${repo.html_url}" target="_blank">
                     <div class="repository-card">
                             <h4>${repo.name}</h4>
